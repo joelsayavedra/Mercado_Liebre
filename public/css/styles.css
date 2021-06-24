@@ -326,8 +326,6 @@ footer p,
     }
 }
 
-
-
 @media (min-width: 1200px){
 
     .vitrina{
@@ -360,7 +358,7 @@ footer p,
     .footer-flex{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     footer h4{
