@@ -56,34 +56,34 @@
         <form form action="/" method="GET" class="signin-form">
             <div class="control-formulario">
                 <label for="nombreCliente">Nombre: </label>
-                <input type="text" name="nombreCliente" class="control">
+                <input type="text" name="nombreCliente" class="control" required>
             </div>
             <div class="control-formulario">
                 <label for="apellidocliente">Apellido: </label>
-                <input type="text" name="apellidoCliente" class="control">
+                <input type="text" name="apellidoCliente" class="control"> required
             </div>
             <div class="control-formulario">
                 <label for="nombreUsuario">Nombre de usuario: </label>
-                <input type="text" name="nombreUsuario" class="control">
+                <input type="text" name="nombreUsuario" class="control" required>
             </div>
             <div class="control-formulario">
                 <label for="fechaNacimiento">Fecha de nacimiento: </label>
-                <input type="date" name="fechaNacimiento" class="control">
+                <input type="date" name="fechaNacimiento" class="control" required>
             </div>
             <div class="control-formulario">
                 <label for="domicilio">Domicilio: </label>
-                <textarea name="domicilio" id="" cols="30" rows="3" class="control"></textarea>
+                <textarea name="domicilio" id="" cols="30" rows="3" class="control" required></textarea>
             </div>
             <div class="control-formulario">
                 <label>Perfil de usuario: </label>
                 <div class="control-formulario-lista">
                     <div>
                         <label>Vendedor</label>
-                        <input type="radio" name="perfilUsuario" value="vendedor">
+                        <input type="radio" name="perfilUsuario" value="vendedor" required>
                     </div>
                     <div>
                         <label>Cliente</label>
-                        <input type="radio" name="perfilUsuario" value="cliente">
+                        <input type="radio" name="perfilUsuario" value="cliente" required>
                     </div>
                 </div>
             </div>
@@ -114,15 +114,15 @@
             </div>
             <div class="control-formulario">
                 <label for="">Foto de perfil: </label>
-                <input type="file" name="fotoPerfil">
+                <input type="file" name="fotoPerfil" required>
             </div>
             <div class="control-formulario">
                 <label for="">Contraseña: </label>
-                <input type="password" name="userPassword" class="control">
+                <input type="password" name="userPassword" class="control" required>
             </div>
             <div class="control-formulario">
                 <label for="">Confirmar contraseña: </label>
-                <input type="password" name="userPasswordCheck" class="control">
+                <input type="password" name="userPasswordCheck" class="control" required>
             </div>
             <button type="submit" class="form-button">Enviar</button>
             <button type="reset" class="form-button">Borrar</button>

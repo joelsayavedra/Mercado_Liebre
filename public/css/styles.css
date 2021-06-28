@@ -87,6 +87,8 @@ button.cajaBusqueda{
     background-color: white;
 }
 
+
+
 .detallesProducto{
     border-top: 1px solid var(--GrisClaro);
     padding-left: 15px;
@@ -211,7 +213,9 @@ footer p,
 }
 
 .signin-form, .login-form{
-    margin: 30px 0px;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px 0px;
 }
 
 .control-formulario{
@@ -241,6 +245,13 @@ footer p,
 
 .control{
     width: 100%;
+}
+
+@keyframes camioncito{
+    20% {transform: rotateZ(-60deg)}
+    40% {transform: rotateZ(0deg)}
+    50% {font-size: 1rem;}
+    100% {}
 }
 
 @media (min-width: 768px){
@@ -315,6 +326,10 @@ footer p,
 
     article:hover p.descripcion{
         color: black;
+    }
+
+    article:hover .logoEnvio{
+        animation: camioncito 1s;
     }
 
     /* article:hover p.descripcion{
